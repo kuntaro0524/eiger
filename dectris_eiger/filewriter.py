@@ -52,6 +52,11 @@ class EigerFileWriter(object):
                              "status", "builder/dcu_buffer_free", timeout=timeout,
                              return_full=return_full))
 
+    def get_buffer_free(self, timeout=2.0, return_full=False):
+        return float(get_value(self._host, self._port, self._api_v, "filewriter",
+                             "status", "buffer_free", timeout=timeout,
+                             return_full=return_full))
+
     available_space = property(get_available_space)
 
     # time
@@ -179,4 +184,6 @@ class EigerFileWriter(object):
 
 if __name__ == "__main__":
     efw=EigerFileWriter("192.168.163.204")
-    print(efw.get_available_space())
+    available_GB=efw.get_buffer_free()/1000.0/1000.0
+
+    print(f"{available_GB:.2f}")
