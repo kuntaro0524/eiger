@@ -1,0 +1,58 @@
+
+07/18 03:04:38 [[1;32mNOTICE[0m] Downloading 1 item(s)
+
+07/18 03:04:38 [[1;32mNOTICE[0m] Download complete: /dev/shm/eigerdl6cx1efv1/20250718120442_noxray_master.h5
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+82e92c|OK  |   707MiB/s|/dev/shm/eigerdl6cx1efv1/20250718120442_noxray_master.h5
+
+Status Legend:
+(OK):download completed.
+h5repack: /opt/dials/dials-v3-18-0/build/../conda_base/lib/libcurl.so.4: no version information available (required by /lib/x86_64-linux-gnu/libhdf5_serial.so.103)
+#####################################
+Download noxray_* to /user/admin45/Data/250718_BL45XU/check02/ (hash 20250718120442_ jobmode 0)
+--hit-extract=True --omega-offset-by-trigger=0.0
+#####################################
+2025-07-18 03:04:38 In 1th trial..
+2025-07-18 03:04:38 On server: 131 files 192 bytes (0.099 sec)
+2025-07-18 03:04:38  donwloading 20250718120442_noxray_master.h5 (1th try)..
+2025-07-18 03:04:38   file size on server 20250718120442_noxray_master.h5 = 1
+2025-07-18 03:04:38   to /dev/shm/eigerdl6cx1efv1
+/usr/local/bin/aria2c --no-proxy=0.0.0.0/0 --dir=/dev/shm/eigerdl6cx1efv1 -x5 -o 20250718120442_noxray_master.h5 http://10.178.231.43/data/20250718120442_noxray_master.h5
+2025-07-18 03:04:38   done in 0.23 sec. 627604.544 KB/s
+ Modifying master..
+  Compressing entry/instrument/detector/detectorSpecific/countrate_correction_lookup_table (size=65536)
+  Compressing entry/instrument/detector/detectorSpecific/countrate_correction_table (size=8000)
+  Compressing entry/instrument/detector/detectorSpecific/flatfield (size=18139650)
+  Compressing entry/instrument/detector/detectorSpecific/pixel_mask (size=18139650)
+  Putting reverse-phi info
+2025-07-18 03:04:40   local_copy done in 0.03 sec. 1215572.997 KB/s
+
+07/18 03:04:41 [[1;32mNOTICE[0m] Downloading 1 item(s)
+
+07/18 03:04:41 [[1;32mNOTICE[0m] Download complete: /dev/shm/eigerdlrza_qeyc/20250718120442_noxray_data_000001.h5
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+96bac1|OK  |   715MiB/s|/dev/shm/eigerdlrza_qeyc/20250718120442_noxray_data_000001.h5
+
+Status Legend:
+(OK):download completed.
+ data file noxray_data_000001.h5 not exists
+2025-07-18 03:04:40 In 2th trial..
+2025-07-18 03:04:41 On server: 131 files 192 bytes (0.151 sec)
+2025-07-18 03:04:41  donwloading 20250718120442_noxray_data_000001.h5 (1th try)..
+2025-07-18 03:04:41   file size on server 20250718120442_noxray_data_000001.h5 = 1
+2025-07-18 03:04:41   to /dev/shm/eigerdlrza_qeyc
+/usr/local/bin/aria2c --no-proxy=0.0.0.0/0 --dir=/dev/shm/eigerdlrza_qeyc -x5 -o 20250718120442_noxray_data_000001.h5 http://10.178.231.43/data/20250718120442_noxray_data_000001.h5
+2025-07-18 03:04:41   done in 0.26 sec. 657931.641 KB/s
+2025-07-18 03:04:41   local_copy done in 0.16 sec. 1081302.913 KB/s
+ all files exist: noxray_master.h5 noxray_data_000001.h5
+2025-07-18 03:04:41 Download noxray to /user/admin45/Data/250718_BL45XU/check02/ Success!
+
+real	0m3.408s
+user	0m4.581s
+sys	0m0.789s
